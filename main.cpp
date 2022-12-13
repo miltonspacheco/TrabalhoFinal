@@ -5,13 +5,37 @@
 #include "teacher.hpp"
 
 void menu();
+
 void classManagment();
 void studentManagment();
 void teacherManagment();
 void pluralManagment();
 
+void classManagment_lvl_2(char option);
+void studentManagment_lvl_2(char option);
+void teacherManagment_lvl_2(char option);
+void pluralManagment_lvl_2(char option);
+
+
 int main ()
 {
+    /*
+    cout << "BEM VINDO AO SISTEMA PLURAL" << endl; 
+
+
+    cout << "*** LOGIN *** " << endl;
+    int login;
+    cin >> login;
+    cout << "SENHA:" << endl;
+    int senha;
+    cin >> senha;*/
+
+    //tela de bem vindo com tempo e apagando coisas
+
+    while (true)
+    {
+        //login
+    }
 
     while (true)
     {
@@ -22,29 +46,23 @@ int main ()
         if(option == '1')
         {
             classManagment();
-            char classOption;
-            cin >> classOption;
         }
 
         if(option == '2')
         {
             studentManagment();
-            char studentOption;
-            cin >> studentOption;
+            
         }
 
         if(option == '3')
         {
             teacherManagment();
-            char teacherOption;
-            cin >> teacherOption;
+            
             
         }
         if(option == '4')
         {
             pluralManagment();
-            char pluralOption;
-            cin >> pluralOption;
         }
         if(option == '0')
         {
@@ -57,15 +75,6 @@ int main ()
         }
     }
     
-    /*cout << "BEM VINDO AO SISTEMA PLURAL" << endl; 
-
-
-    cout << "*** LOGIN *** " << endl;
-    int login;
-    cin >> login;
-    cout << "SENHA:" << endl;
-    int senha;
-    cin >> senha;*/
 
 
 
@@ -96,6 +105,7 @@ void menu()
     cout << "\tDigite sua escolha: ";
 }
 
+//---------------GERENCIAMENTO DAS TURMAS------------------
 void classManagment()
 {
     cout << "" << endl;
@@ -112,7 +122,41 @@ void classManagment()
     cout << "\t*****************************************\t" << endl;
     cout << "" << endl;
     cout << "\tDigite sua escolha: ";
+    char option;
+    cin >> option;
+    classManagment_lvl_2(option);
+    
 }
+
+void classManagment_lvl_2(char option)
+{
+
+        if(option == '1')
+        {
+          
+        }
+
+        if(option == '2')
+        {
+            
+        }
+
+        if(option == '3')
+        {
+            
+        }
+        if(option == '0')
+        {
+            
+        }
+        else
+        {
+            cout << "" << endl;
+            cout << "\t* Opcao invalida, tente novamente! *";
+        }
+}
+
+//---------------GERENCIAMENTO DE ALUNOS------------------
 
 void studentManagment()
 {
@@ -131,8 +175,59 @@ void studentManagment()
     cout << "\t*****************************************\t" << endl;
     cout << "" << endl;
     cout << "\tDigite sua escolha: ";
+    char option;
+    cin >> option;
+    studentManagment_lvl_2(option);
 
 }
+
+void studentManagment_lvl_2(char option)
+{
+
+        if(option == '1')
+        {
+            cout << "\tNome do aluno: ";
+            string name;
+            cin >> name;
+            cout << "\tIdade: ";
+            size_t age;
+            cin >> age;
+            cout << "\tNúmero de telefone: "; //proibir telefones invalidos
+            size_t number;
+            cin >> number;
+            cout << "\tTurma: "; 
+            string classType;
+            cin >> classType;
+
+            Student aluno(name, age, number, classType);
+
+        }
+
+        if(option == '2')
+        {
+            
+        }
+
+        if(option == '3')
+        {
+            
+        }
+        if(option == '4')
+        {
+            
+        }
+        if(option == '0')
+        {
+            
+        }
+        else
+        {
+            cout << "" << endl;
+            cout << "\t* Opcao invalida, tente novamente! *";
+        }
+}
+
+//---------------GERENCIAMENTO DE PROFESSORES------------------
 
 void teacherManagment()
 {
@@ -152,7 +247,45 @@ void teacherManagment()
     cout << "\t*****************************************\t" << endl;
     cout << "" << endl;
     cout << "\tDigite sua escolha: ";
+    char option;
+    cin >> option;
+    teacherManagment_lvl_2(option);
 }
+
+void teacherManagment_lvl_2(char option)
+{
+
+        if(option == '1')
+        {
+          
+        }
+
+        if(option == '2')
+        {
+            
+        }
+
+        if(option == '3')
+        {
+            
+        }
+        if(option == '4')
+        {
+            
+        }
+        if(option == '0')
+        {
+            
+        }
+        else
+        {
+            cout << "" << endl;
+            cout << "\t* Opcao invalida, tente novamente! *";
+        }
+}
+
+
+//---------------GERENCIAMENTO DO CURSO------------------
 
 void pluralManagment()
 {
@@ -171,4 +304,39 @@ void pluralManagment()
     cout << "\t*****************************************\t" << endl;
     cout << "" << endl;
     cout << "\tDigite sua escolha: ";
+    char option;
+    cin >> option;
+    pluralManagment_lvl_2(option);
+}
+
+void pluralManagment_lvl_2(char option)
+{
+
+        if(option == '1')
+        {
+          
+        }
+
+        if(option == '2')
+        {
+            
+        }
+
+        if(option == '3')
+        {
+            
+        }
+        if(option == '4')
+        {
+            
+        }
+        if(option == '0')
+        {
+            
+        }
+        else
+        {
+            cout << "" << endl;
+            cout << "\t* Opcao invalida, tente novamente! *";
+        }
 }

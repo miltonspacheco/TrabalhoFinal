@@ -9,11 +9,12 @@ using namespace std;
 
 class Student : public Person
 {
-    private:
+    protected:
         string m_classType;
 
     public:
         Student();
+        //Student(string name, size_t age, size_t number, string classType) : Person(name, age, number), m_name(name) {};
         ~Student();
         
 
